@@ -57,7 +57,7 @@
       function addTodo(offset) {
         store.push({
           label: ((Math.random() * 1e6) | 0).toString(16),
-          image: 'http://placehold.it/80x80',
+          image: 'http://lorempixel.com/80/80/?' + Math.random(),
           created: Date.now() + (offset || 0),
           done: false
         });
